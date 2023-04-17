@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Header = () => {
     const styles = {
         header:{
@@ -11,11 +13,22 @@ const Header = () => {
     }
   return(
     <div style={styles.header}>
-        <span style={styles.link}>Home</span>
-        <span style={styles.link}>Blog</span>
-        <span style={styles.link}>Profile</span>
-        <span style={styles.link}>Items</span>
-        <span style={styles.link}>Catégories</span>
+        {/* comme on utilise pas l'attribut a pour faire ledes liens on met l'attribut passHref */}
+        <Link href="/" passHref>
+            <span style={styles.link}>Home</span>
+        </Link>
+        <Link href="/blog" passHref>
+            <span style={styles.link}>Blog</span>
+        </Link>
+        <Link href="/profile" passHref>
+            <span style={styles.link}>Profile</span>
+        </Link>
+        <Link href="/blog/items" passHref>
+            <span style={styles.link}>Items</span>
+        </Link>
+        <Link href="/blog/categories" passHref>
+            <span style={styles.link}>Catégories</span>
+        </Link>         
     </div>
   )
 }
