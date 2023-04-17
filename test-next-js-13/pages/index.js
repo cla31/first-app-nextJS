@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 const Home = () => {
   return (
-    <div>Bonjour</div>
+   <h1>Bonjour</h1>
    )  
 }
 

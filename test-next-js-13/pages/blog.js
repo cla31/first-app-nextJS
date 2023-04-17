@@ -1,8 +1,7 @@
 const Blog = () => {
   return(
-  <div>
-    Blog
-  </div>)
+  <h1>Blog</h1>
+  )
 }
 
 export default Blog
