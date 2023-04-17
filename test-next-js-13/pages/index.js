@@ -1,11 +1,15 @@
 
+import { Layout } from '@/components/layout'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
 const Home = () => {
   return (
-   <h1>Bonjour</h1>
+    <Layout>
+         <h1>Bonjour</h1>
+    </Layout>
+
    )  
 }
 
